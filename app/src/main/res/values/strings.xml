@@ -9,4 +9,33 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="from_hint_text">From</string>
     <string name="to_hint_text">To</string>
+    <string name="from_hint_text_current">Current location</string>
+    <string name="eta_text_value">1 min</string>
+    <string name="scooter_num_text">2</string>
+    <string name="scooter_num_text_mock">Scooter Number 2</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="yha_text_value">You have arrived at your destination</string>
+    <string name="charged_text_value">Charged: £2.10</string>
+    <string name="duration_text_value">Duration: 18:00</string>
+    <string name="manual_mode_text_value">Fare for manual mode: £00.00</string>
+    <string name="thank_you_message">Thank you for using Scooter Summon</string>
+    <string name="comp_journey_text_value">Complete Journey</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="history_example_1_text">12/10/2022 ; £14.10 ; 00:10</string>
+    <string name="history_text">History:</string>
+    <string name="credit_text">Credits: XXXX</string>
+    <string name="preferences_text_value">Preferences</string>
+    <string name="min_bat_percent_text">Minimum Battery Percentage</string>
+    <string name="dark_mode_text">Dark Mode</string>
+    <string name="manual_idle_time_text">Manual Idle Time</string>
+    <string name="font_size_text">Font size</string>
+    <string name="sign_out_text_value">Sign Out</string>
 </resources>

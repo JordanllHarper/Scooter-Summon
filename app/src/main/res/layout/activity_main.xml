@@ -11,22 +11,34 @@
         android:id="@+id/rq_button"
         android:layout_width="248dp"
         android:layout_height="86dp"
-        android:layout_marginTop="520dp"
+        android:layout_marginTop="592dp"
         android:backgroundTint="@color/teal_700"
         android:text="@string/rq_button_text"
         android:textColor="@color/design_default_color_background"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintHorizontal_bias="0.404"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/from_textbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:hint="@string/from_hint_text_current"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/from_textView" />
 
     <TextView
         android:id="@+id/from_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="64dp"
         android:text="@string/from_text"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,37 +48,18 @@
         android:id="@+id/to_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="44dp"
         android:text="@string/to_text"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="@+id/from_textView"
         app:layout_constraintTop_toBottomOf="@+id/from_textView" />
 
-    <TextView
-        android:id="@+id/in_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/in_text"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="@+id/to_textView"
-        app:layout_constraintTop_toBottomOf="@+id/to_textView" />
-
-    <EditText
-        android:id="@+id/from_textbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
-        android:ems="10"
-        android:hint="@string/from_hint_text"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/from_textView" />
-
     <EditText
         android:id="@+id/to_textbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
         android:ems="10"
         android:hint="@string/to_hint_text"
         android:inputType="textPersonName"
@@ -75,11 +68,21 @@
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/map_view"
-        android:layout_width="276dp"
-        android:layout_height="223dp"
+        android:layout_width="397dp"
+        android:layout_height="314dp"
         android:layout_marginBottom="52dp"
         app:layout_constraintBottom_toTopOf="@+id/rq_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
