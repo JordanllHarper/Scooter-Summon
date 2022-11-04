@@ -1,26 +1,17 @@
 package uk.ac.chester.autoscooter
 
-import android.Manifest.permission.ACCESS_FINE_LOCATION
-import android.content.Context
+//ignore package name - old name :/
+
 import android.content.Intent
-import android.location.Location
-import android.location.LocationListener
-import android.location.LocationManager
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.content.ContextCompat
-import androidx.core.view.children
-import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.location.LocationServices
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.MapView
 import com.google.android.gms.maps.OnMapReadyCallback
-import uk.ac.chester.autoscooter.databinding.ActivityMainBinding
 import com.google.android.gms.maps.model.LatLng
-
-import com.google.android.gms.maps.CameraUpdateFactory
+import uk.ac.chester.autoscooter.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity(), OnMapReadyCallback {
@@ -53,6 +44,9 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
         mapView.onResume()
 
+        supportActionBar?.title = "Scooter Summon"
+
+
         binding.rqButton.setOnClickListener {
             requestButtonClicked(
                 binding.fromTextbox.text.toString(),
@@ -64,6 +58,8 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
             val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
         }
+
+
 
 
     }
